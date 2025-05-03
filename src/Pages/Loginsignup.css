@@ -1,0 +1,137 @@
+ /* .auth-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); 
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .auth-container {
+    width: 400px;
+    background: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    z-index: 2;
+  } */
+  .auth-wrapper { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  .auth-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    width: 400px;
+    text-align: center;
+  }
+  
+  .auth-container h2 {
+    margin-bottom: 20px;
+    color: #101010;
+  }
+  
+  .auth-container input {
+    width: 90%;
+    height: 50px;
+    padding-left: 15px;
+    
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+  }
+  
+  .auth-container button {
+    width: 90%;
+    height: 50px;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-container button:hover {
+    background-color: #e65929;
+  }
+  
+  .auth-container p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .auth-container p span {
+    color: #ff6600;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .forgot-password {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .forgot-password:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+    color: darkred;
+    animation: pulse 1s infinite alternate;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.6;
+    }
+  }
+  
+ 
+  
+  /* .auth-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .auth-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .auth-container p {
+    margin-top: 15px;
+  }
+  
+  .auth-container span {
+    color: #007bff;
+    cursor: pointer;
+  }
+   */

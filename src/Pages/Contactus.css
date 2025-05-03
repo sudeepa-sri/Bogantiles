@@ -1,0 +1,96 @@
+.contactus-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .contactus-card {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .contactus-form {
+    flex: 1;
+    padding: 20px;
+    padding-right: 30px; /* ✅ Add some right padding to form only */
+  }
+  
+  .contactus-map {
+    flex: 1;
+    padding: 0; /* Keep map clean, full width */
+    height: 100%;
+  }
+  
+  .contactus-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  .form-fields {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .form-input {
+    margin-bottom: 15px;
+  }
+  
+  .form-input input,
+  .form-input textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+  }
+  
+  .submit-button button {
+    background-color: #28a745;
+    padding: 12px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-button button:hover {
+    background-color: #218838;
+  }
+  /* Success Message Styles */
+.success-message {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+}
+
+/* Error Message Styles */
+.error-message {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}

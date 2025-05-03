@@ -1,0 +1,66 @@
+.trending-wrapper {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.trending-wrapper h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #007bff;
+  text-align: center;
+}
+
+.trending-wrapper .tile-grid-trend {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.trending-wrapper .tile-card-trend {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.trending-wrapper .tile-card-trend:hover {
+  transform: translateY(-5px);
+}
+
+.trending-wrapper .tile-image-trend {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.trending-wrapper .tile-card-trend h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.trending-wrapper .tile-card-trend p {
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
+  color: #555;
+}
+
+.trending-wrapper .view-details-btn {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background-color: #2b9348;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.trending-wrapper .view-details-btn:hover {
+  background-color: #238636;
+}

@@ -1,0 +1,117 @@
+.tile-details-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding: 40px;
+    background-color: #f0f0f0;
+  }
+  
+  .tile-details-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  /* Left side: image */
+  .tile-image-section {
+    flex: 1;
+    max-width: 50%;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .tile-details-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  /* Right side: info */
+  .tile-info-section {
+    flex: 1;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .tile-info-section h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    color: #333;
+  }
+  
+  .tile-info-section p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Buttons at bottom */
+  .tile-details-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .back-button,
+  .add-to-cart-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button {
+    background-color: #e0e0e0;
+  }
+  
+  .back-button:hover {
+    background-color: #c0c0c0;
+  }
+  
+  .add-to-cart-button {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .tile-details-container {
+      flex-direction: column;
+    }
+  
+    .tile-image-section,
+    .tile-info-section {
+      max-width: 100%;
+    }
+  
+    .tile-info-section {
+      padding: 20px;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .tile-details-buttons {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+  }
+  

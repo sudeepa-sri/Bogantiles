@@ -1,0 +1,153 @@
+/* Container Styles */
+.userrequest .request-form-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.userrequest h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.userrequest .status-message {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #f6f8fa;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Form Field Styles */
+.userrequest form .form-field {
+  margin-bottom: 20px;
+}
+
+.userrequest form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #555;
+}
+
+.userrequest form input[type="text"],
+.userrequest form input[type="email"],
+.userrequest form input[type="number"],
+.userrequest form select,
+.userrequest form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border 0.2s ease;
+}
+
+.userrequest form input:focus,
+.userrequest form select:focus,
+.userrequest form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit Button */
+.userrequest .submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+  transition: background-color 0.2s ease;
+}
+
+.userrequest .submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Tile List */
+.userrequest .tile-info-request {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: #f9f9f9;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.userrequest .tile-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.userrequest .tile-details {
+  flex: 1;
+}
+
+.userrequest .tile-details p {
+  margin: 8px 0;
+  font-size: 14.5px;
+}
+
+.userrequest .tile-details input[type="number"] {
+  max-width: 100px;
+}
+
+/* Remove Button */
+.userrequest .tile-details button {
+  margin-top: 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.userrequest .tile-details button:hover {
+  background-color: #b52a37;
+}
+
+/* Subtotal & Total Price */
+.userrequest .form-field strong {
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.userrequest .remove-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  width: 100px;
+}
+
+.userrequest .remove-btn:hover {
+  background-color: #c0392b;
+}

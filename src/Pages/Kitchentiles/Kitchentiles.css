@@ -1,0 +1,154 @@
+/* User-side specific styles */
+.user-container {
+  padding: 20px;
+}
+
+.user-container .tiles-page .top-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 0px;
+}
+
+.user-container .tiles-page .top-controls .filter-container {
+  flex: 1;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  padding-top: 68px;
+  flex-wrap: wrap;
+  padding-top: 78px;
+}
+
+.user-container .tiles-page .top-controls .search-bar-container {
+  flex: 1;
+  justify-content: flex-end;
+  margin-top: 30px;
+  display: flex;
+}
+
+.user-container .tiles-page .search-input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-container .tiles-page .search-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.4);
+}
+
+.user-container .tiles-page select {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  outline: none;
+  cursor: pointer;
+  
+}
+
+.user-container .tiles-page select:hover {
+  border-color: #007bff;
+}
+
+.user-container .tiles-page select:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 91, 255, 0.3);
+}
+
+.user-container .tiles-page .price-filter {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 400px;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: -10px;
+  
+}
+
+.user-container .tiles-page .price-input {
+  width: 48%;
+  height: 22px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.user-container .tiles-page .price-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.user-container .tiles-page .tiles-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+
+.user-container .tiles-page .tile-card {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1); 
+  
+}
+
+.user-container .tiles-page .tile-card:hover {
+  border-color: #007bff; /* Highlight border color on hover */
+}
+
+.user-container .tiles-page .tile-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.user-container .tiles-page .tile-name {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.user-container .tiles-page .view-details-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.user-container .tiles-page .view-details-button:hover {
+  background-color: #0056b3;
+}
+
+.user-container .tiles-page .no-results {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+}

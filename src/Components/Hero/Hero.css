@@ -1,0 +1,62 @@
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  padding: 0;  /* Ensure no default padding */
+  margin: 0;   /* Remove any extra margin */
+}
+
+
+/* Overlay to add a transparent black layer */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency as needed */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Ensures text is above overlay */
+  max-width: 80%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ff6b35;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  
+}
+
+.explore-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: #ff6b35;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: #e65929;
+}
+

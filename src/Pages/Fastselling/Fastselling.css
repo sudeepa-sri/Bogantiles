@@ -1,0 +1,86 @@
+.fastselling-section {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.fastselling-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Grid layout for tiles */
+.tile-grid-fast {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row on desktop */
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Individual tile card */
+.tile-card-fast {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px; /* Fixed height for consistency */
+}
+
+/* Card hover effect */
+.tile-card-fast:hover {
+  transform: scale(1.05);
+}
+
+/* Tile image styling */
+.tile-image-fast {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Title and details */
+.tile-card-fast h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #444;
+}
+
+.tile-card-fast p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.price-fast {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e67e22;
+  margin-top: auto;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .tile-grid-fast {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .tile-grid-fast {
+    grid-template-columns: 1fr;
+  }
+
+  .tile-card-fast {
+    height: auto; /* Let it expand naturally on small screens */
+  }
+}

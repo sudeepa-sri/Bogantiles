@@ -1,0 +1,211 @@
+.adminrequest .orders-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-left: 300px;
+}
+
+.adminrequest .orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.adminrequest .orders-table th,
+.adminrequest .orders-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.adminrequest .orders-table th {
+  background-color: #f2f2f2;
+}
+
+.adminrequest .user-details p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.adminrequest .tile-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.adminrequest .tile-item {
+  display: flex;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+
+.adminrequest .tile-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.adminrequest .tile-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #555;
+}
+
+.adminrequest .tile-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.adminrequest .tile-category,
+.adminrequest .tile-price,
+.adminrequest .tile-quantity,
+.adminrequest .tile-total {
+  margin: 2px 0;
+}
+
+.adminrequest .tile-price {
+  color: #007BFF;
+}
+
+.adminrequest .tile-quantity {
+  color: #28a745;
+}
+
+.adminrequest .status-dropdown {
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.adminrequest .status-dropdown.pending {
+  background-color: #fdd;
+  color: #cc0000;
+}
+
+.adminrequest .status-dropdown.contacted {
+  background-color: #dfd;
+  color: #007a00;
+}
+.adminrequest .orders-table tr:hover {
+  background-color: #f1f1f1;  /* Light grey color on hover */
+  cursor: pointer;  /* Optional: changes the cursor to a pointer */
+}
+
+.adminrequest .reference-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.adminrequest .reference-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.adminrequest .date-filter {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  
+}
+
+.adminrequest .date-filter label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.adminrequest.filters {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+/* Status filter container */
+.adminrequest .status-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Label for the status filter */
+.adminrequest .status-filter label {
+  font-weight: bold;
+}
+
+/* Styling for the status dropdown */
+.adminrequest .status-filter select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus effect for the dropdown */
+.adminrequest .status-filter select:focus {
+  border-color: #4c4d4d;
+  outline: none;
+}
+
+/* Hover effect for the dropdown */
+.adminrequest .status-filter select:hover {
+  border-color: #2e2e2f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .adminrequest .status-filter {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .adminrequest .orders-container {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .adminrequest .tile-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .adminrequest .tile-item img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .adminrequest .tile-info {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+  
