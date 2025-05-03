@@ -8,7 +8,7 @@ function FastSellingTileDetails() {
   const [tile, setTile] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/tiles/${tileId}`)
+    fetch(`https://bogantilesbackend.onrender.com/api/tiles/${tileId}`)
       .then((response) => response.json())
       .then((data) => {
         setTile(data);
@@ -27,7 +27,7 @@ function FastSellingTileDetails() {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/cart", {
+      const response = await fetch("https://bogantilesbackend.onrender.com/api/cart", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -66,7 +66,7 @@ function FastSellingTileDetails() {
       <div className="tile-details-container">
         <div className="tile-image-section">
           <img
-            src={`http://localhost:5000${tile.imageUrl}`}
+            src={`https://bogantilesbackend.onrender.com${tile.imageUrl}`}
             alt={tile.name}
             className="tile-details-image"
           />

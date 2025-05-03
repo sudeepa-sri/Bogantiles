@@ -11,7 +11,7 @@ const TileChart = () => {
   useEffect(() => {
     const fetchTiles = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/tiles'); // Adjust API endpoint if necessary
+        const res = await axios.get('https://bogantilesbackend.onrender.com/api/tiles'); // Adjust API endpoint if necessary
         const tiles = res.data;
 
         const categoryCount = {};

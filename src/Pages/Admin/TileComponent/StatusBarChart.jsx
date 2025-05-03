@@ -12,7 +12,7 @@ const StatusBarChart = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/request/fetch')
+    axios.get('https://bogantilesbackend.onrender.com/api/request/fetch')
       .then((res) => {
         const data = res.data;
         const counts = { Pending: 0, Contacted: 0 };

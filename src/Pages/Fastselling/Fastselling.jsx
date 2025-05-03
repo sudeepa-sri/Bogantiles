@@ -9,7 +9,7 @@ const Fastselling = () => {
   useEffect(() => {
     const fetchTrendingTiles = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/tiles/fast-selling");
+        const response = await fetch("https://bogantilesbackend.onrender.com/api/tiles/fast-selling");
         const data = await response.json();
         setTrendingTiles(data);
       } catch (error) {
@@ -34,7 +34,7 @@ const Fastselling = () => {
           trendingTiles.map((tile) => (
             <div key={tile._id} className="tile-card-trend">
               <img
-                src={`http://localhost:5000${tile.imageUrl}`}
+                src={`https://bogantilesbackend.onrender.com${tile.imageUrl}`}
                 alt={tile.name}
                 className="tile-image-trend"
               />

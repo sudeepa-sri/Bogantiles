@@ -16,7 +16,7 @@ const Loginsignup = () => {
   const handleAuth = async () => {
     try {
       if (isLogin) {
-        const res = await axios.post('http://localhost:5000/api/auth/login', {
+        const res = await axios.post('https://bogantilesbackend.onrender.com/api/auth/login', {
           email,
           password,
         });
@@ -27,7 +27,7 @@ const Loginsignup = () => {
         alert(`✅ Login successful!`);
         navigate(-1);
       } else {
-        const res = await axios.post('http://localhost:5000/api/auth/signup', {
+        const res = await axios.post('https://bogantilesbackend.onrender.com/api/auth/signup', {
           name,
           email,
           password,
@@ -44,7 +44,7 @@ const Loginsignup = () => {
   const handleResetPassword = async () => {
     try {
       console.log('Sending request with:', { email, password, confirmPassword }); // Debugging step
-      const res = await axios.post('http://localhost:5000/api/auth/reset-password', {
+      const res = await axios.post('https://bogantilesbackend.onrender.com/api/auth/reset-password', {
         email,
         newPassword: password,
         confirmPassword,

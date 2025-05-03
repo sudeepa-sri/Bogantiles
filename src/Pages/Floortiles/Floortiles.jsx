@@ -20,7 +20,7 @@ function Floortiles() {
   useEffect(() => {
     const fetchTiles = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/tiles/category/floor');
+        const response = await axios.get('https://bogantilesbackend.onrender.com/api/tiles/category/floor');
         const tilesData = response.data;
         setTiles(tilesData);
         setAllTiles(tilesData);
@@ -155,7 +155,7 @@ function Floortiles() {
             tiles.map(tile => (
               <div key={tile._id} className="tile-card">
                 <img 
-                  src={`http://localhost:5000${tile.imageUrl}`} 
+                  src={`https://bogantilesbackend.onrender.com${tile.imageUrl}`} 
                   alt={tile.name} 
                   className="tile-image"
                 />

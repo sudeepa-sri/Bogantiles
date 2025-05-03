@@ -20,7 +20,7 @@ function Outdoortiles() {
   useEffect(() => {
     const fetchTiles = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/tiles/category/outdoor'); // Changed endpoint for outdoor category
+        const response = await axios.get('https://bogantilesbackend.onrender.com/api/tiles/category/outdoor'); // Changed endpoint for outdoor category
         const tilesData = response.data;
         setTiles(tilesData);
         setAllTiles(tilesData);
@@ -159,7 +159,7 @@ function Outdoortiles() {
             tiles.map(tile => (
               <div key={tile._id} className="tile-card">
                 <img 
-                  src={`http://localhost:5000${tile.imageUrl}`} 
+                  src={`https://bogantilesbackend.onrender.com${tile.imageUrl}`} 
                   alt={tile.name} 
                   className="tile-image"
                 />

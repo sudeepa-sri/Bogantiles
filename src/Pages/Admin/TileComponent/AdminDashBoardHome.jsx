@@ -13,7 +13,7 @@ const AdminDashBoardHome = () => {
     // Fetch Trending Tiles from the backend API
     const fetchTrendingTiles = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/tiles/trending');
+        const response = await axios.get('https://bogantilesbackend.onrender.com/api/tiles/trending');
         setTrendingTiles(response.data); // Set the trending tiles in state
       } catch (error) {
         console.error('Error fetching trending tiles:', error);
@@ -23,7 +23,7 @@ const AdminDashBoardHome = () => {
     // Fetch Fast-Selling Tiles from the backend API
     const fetchFastSellingTiles = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/tiles/fast-selling');
+        const response = await axios.get('https://bogantilesbackend.onrender.com/api/tiles/fast-selling');
         setFastSellingTiles(response.data); // Set the fast-selling tiles in state
       } catch (error) {
         console.error('Error fetching fast-selling tiles:', error);
@@ -58,7 +58,7 @@ const AdminDashBoardHome = () => {
             <div key={tile._id} className="admin-dashboard-tile-item">
               <div className="admin-dashboard-tile-image-container">
                 <img
-                  src={`http://localhost:5000${tile.imageUrl}`}
+                  src={`https://bogantilesbackend.onrender.com${tile.imageUrl}`}
                   alt={tile.name}
                   className="admin-dashboard-tile-image"
                 />
@@ -82,7 +82,7 @@ const AdminDashBoardHome = () => {
             <div key={tile._id} className="admin-dashboard-tile-item">
               <div className="admin-dashboard-tile-image-container">
                 <img
-                  src={`http://localhost:5000${tile.imageUrl}`}
+                  src={`https://bogantilesbackend.onrender.com${tile.imageUrl}`}
                   alt={tile.name}
                   className="admin-dashboard-tile-image"
                 />

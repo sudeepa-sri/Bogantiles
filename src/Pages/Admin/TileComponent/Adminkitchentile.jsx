@@ -19,7 +19,7 @@ const AdminKitchenTile = () => {
   useEffect(() => {
     const fetchTiles = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/tiles/category/kitchen');
+        const response = await axios.get('https://bogantilesbackend.onrender.com/api/tiles/category/kitchen');
         const tilesData = response.data;
         setTiles(tilesData);
         setAllTiles(tilesData); // save all tiles
@@ -81,7 +81,7 @@ const AdminKitchenTile = () => {
   // Handle delete tile
   const handleDelete = async (tileId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/tiles/${tileId}`);
+      await axios.delete(`https://bogantilesbackend.onrender.com/api/tiles/${tileId}`);
       const updatedTiles = allTiles.filter(tile => tile._id !== tileId);
       setAllTiles(updatedTiles);
       setTiles(updatedTiles);
@@ -197,7 +197,7 @@ const AdminKitchenTile = () => {
             <div key={tile._id} className="tile-card">
               <div className="tile-image-container">
                 <img 
-                  src={`http://localhost:5000${tile.imageUrl}`} 
+                  src={`https://bogantilesbackend.onrender.com${tile.imageUrl}`} 
                   alt={tile.name} 
                   className="tile-image" 
                 />

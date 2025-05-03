@@ -12,7 +12,7 @@ const AdminLogin = () => {
 
   const handleLogin = async () => {
     try {
-        const res = await axios.post('http://localhost:5000/api/auth/admin/login', {
+        const res = await axios.post('https://bogantilesbackend.onrender.com/api/auth/admin/login', {
 
         email,
         password,
