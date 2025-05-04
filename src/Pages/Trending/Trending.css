@@ -64,3 +64,122 @@
 .trending-wrapper .view-details-btn:hover {
   background-color: #238636;
 }
+
+@media (max-width: 768px) {
+  /* Trending Section Wrapper */
+  .trending-wrapper {
+    padding: 1rem; /* Reduced padding for smaller screens */
+  }
+
+  .trending-wrapper h2 {
+    font-size: 1.5rem; /* Adjusted font size */
+    margin-bottom: 1rem; /* Reduced bottom margin */
+  }
+
+  /* Tile Grid Layout */
+  .trending-wrapper .tile-grid-trend {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjusted tile size */
+    gap: 1rem; /* Reduced gap between tiles */
+  }
+
+  /* Tile Card */
+  .trending-wrapper .tile-card-trend {
+    padding: 0.75rem; /* Reduced padding inside the card */
+  }
+
+  .trending-wrapper .tile-image-trend {
+    height: 160px; /* Reduced height of images */
+    margin-bottom: 0.5rem; /* Adjusted margin */
+  }
+
+  .trending-wrapper .tile-card-trend h3 {
+    font-size: 1.1rem; /* Slightly reduced font size */
+  }
+
+  .trending-wrapper .tile-card-trend p {
+    font-size: 0.85rem; /* Smaller font size */
+  }
+
+  .trending-wrapper .view-details-btn {
+    padding: 0.4rem 0.8rem; /* Smaller button padding */
+    font-size: 0.9rem; /* Adjusted font size */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Trending Section Wrapper */
+  .trending-wrapper {
+    padding: 0.5rem; /* Even smaller padding */
+  }
+
+  .trending-wrapper h2 {
+    font-size: 1.25rem; /* Further reduced font size */
+    margin-bottom: 0.75rem; /* Reduced margin */
+  }
+
+  /* Tile Grid Layout for horizontal scrolling */
+  .trending-wrapper .tile-grid-trend {
+    display: flex; /* Flexbox for horizontal scroll */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 0.75rem; /* Reduced gap between tiles */
+    padding: 10px 0; /* Padding to give space around the tiles */
+  }
+
+  /* Tile Card */
+  .trending-wrapper .tile-card-trend {
+    flex: 0 0 auto; /* Prevent cards from stretching */
+    width: 70%; /* Adjust width for better mobile fit */
+    height: 300px; /* Fixed height for consistency */
+    padding: 0.5rem; /* Reduced padding */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+  }
+
+  /* Tile Card Hover Effect */
+  .trending-wrapper .tile-card-trend:hover {
+    transform: scale(1.05);
+  }
+
+  /* Tile Image Styling */
+  .trending-wrapper .tile-image-trend {
+    width: 100%;
+    height: 140px; /* Further reduced image height */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.25rem; /* Adjusted margin */
+  }
+
+  /* Tile Title */
+  .trending-wrapper .tile-card-trend h3 {
+    font-size: 1rem; /* Further reduced font size */
+    margin: 10px 0;
+    color: #444;
+  }
+
+  /* Tile Description */
+  .trending-wrapper .tile-card-trend p {
+    font-size: 0.8rem; /* Smaller font size */
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  /* View Details Button */
+  .trending-wrapper .view-details-btn {
+    padding: 0.3rem 0.6rem; /* Smaller button padding */
+    font-size: 0.8rem; /* Further reduced font size */
+    background-color: #ff6600;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .trending-wrapper .view-details-btn:hover {
+    background-color: #e65929;
+  }
+}
+

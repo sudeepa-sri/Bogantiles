@@ -151,3 +151,138 @@
 .userrequest .remove-btn:hover {
   background-color: #c0392b;
 }
+
+
+
+@media (max-width: 768px) {
+  /* Request Form Container */
+  .userrequest .request-form-container {
+    padding: 20px; /* Reduced padding for smaller screens */
+    margin: 20px auto; /* Smaller margin */
+    max-width: 100%; /* Ensure full width on smaller screens */
+  }
+
+  /* Form Field Styles */
+  .userrequest form .form-field {
+    margin-bottom: 15px; /* Reduced bottom margin */
+  }
+
+  .userrequest form label {
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .userrequest form input[type="text"],
+  .userrequest form input[type="email"],
+  .userrequest form input[type="number"],
+  .userrequest form select,
+  .userrequest form textarea {
+    font-size: 14px; /* Smaller font size */
+    padding: 8px 12px; /* Reduced padding */
+  }
+
+  .userrequest .submit-btn {
+    font-size: 14px; /* Adjusted font size */
+    padding: 10px 18px; /* Adjusted padding */
+  }
+
+  /* Tile List */
+  .userrequest .tile-info-request {
+    flex-direction: column; /* Stack tiles vertically */
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .userrequest .tile-image {
+    width: 80px; /* Smaller image */
+    height: 80px;
+  }
+
+  .userrequest .tile-details p {
+    font-size: 13px; /* Adjusted font size */
+  }
+
+  .userrequest .tile-details input[type="number"] {
+    width: 80px; /* Smaller input */
+  }
+
+  /* Remove Button */
+  .userrequest .tile-details button {
+    font-size: 13px; /* Smaller font size */
+    padding: 6px 12px; /* Adjusted padding */
+  }
+
+  /* Subtotal & Total Price */
+  .userrequest .form-field strong {
+    font-size: 14px; /* Adjusted font size */
+  }
+
+  /* Remove Button (general) */
+  .userrequest .remove-btn {
+    font-size: 12px; /* Smaller font size */
+    padding: 4px 8px; /* Adjusted padding */
+    width: 80px; /* Smaller button */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Request Form Container */
+  .userrequest .request-form-container {
+    padding: 15px; /* Even smaller padding */
+  }
+
+  /* Form Field Styles */
+  .userrequest form label {
+    font-size: 13px; /* Further reduced font size */
+  }
+
+  .userrequest form input[type="text"],
+  .userrequest form input[type="email"],
+  .userrequest form input[type="number"],
+  .userrequest form select,
+  .userrequest form textarea {
+    font-size: 13px; /* Adjusted font size */
+    padding: 6px 10px; /* Smaller padding */
+  }
+
+  .userrequest .submit-btn {
+    font-size: 13px; /* Further reduced font size */
+    padding: 8px 16px; /* Smaller padding */
+  }
+
+  /* Tile List */
+  .userrequest .tile-info-request {
+    gap: 8px; /* Reduced gap between tiles */
+  }
+
+  .userrequest .tile-image {
+    width: 70px; /* Even smaller image */
+    height: 70px;
+  }
+
+  .userrequest .tile-details p {
+    font-size: 12px; /* Smaller font size */
+  }
+
+  .userrequest .tile-details input[type="number"] {
+    width: 60px; /* Even smaller input */
+  }
+
+  /* Remove Button */
+  .userrequest .tile-details button {
+    font-size: 12px; /* Smaller font size */
+    padding: 4px 10px; /* Adjusted padding */
+  }
+
+  /* Subtotal & Total Price */
+  .userrequest .form-field strong {
+    font-size: 13px; /* Smaller font size */
+  }
+
+  /* Remove Button (general) */
+  .userrequest .remove-btn {
+    font-size: 11px; /* Smaller font size */
+    padding: 4px 6px; /* Adjusted padding */
+    width: 70px; /* Smaller button */
+  }
+}

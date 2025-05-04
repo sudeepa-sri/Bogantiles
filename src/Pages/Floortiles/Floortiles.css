@@ -98,3 +98,28 @@
     }
   }
   
+
+  @media (max-width: 480px) {
+    /* Adjust the gap between tiles for smaller screens */
+    .tiles-container {
+      gap: 12px;
+    }
+  
+    /* Further adjust tile card layout */
+    .tile-card {
+      padding: 8px;
+    }
+  
+    .tile-name {
+      font-size: 1rem; /* Further decrease font size for tile name */
+    }
+  
+    .tile-card p {
+      font-size: 0.8rem; /* Further adjust price/size font size */
+    }
+  
+    .view-details-button {
+      padding: 8px 16px;
+      font-size: 12px; /* Adjust button size on very small screens */
+    }
+  }

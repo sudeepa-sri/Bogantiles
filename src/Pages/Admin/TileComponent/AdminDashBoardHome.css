@@ -82,3 +82,82 @@ h1 {
   font-weight: bold;
   margin: 5px 0;
 }
+
+
+@media (max-width: 1024px) {
+  /* Adjust layout for tablets and smaller screens */
+  .admin-dashboard-main-content {
+    margin-left: 0; /* Full width for smaller screens */
+    padding-top: 20px;
+  }
+
+  .admin-dashboard-tiles-container {
+    padding-top: 50px;
+    justify-content: center;  /* Center tiles for better display */
+  }
+
+  .admin-dashboard-tile-item {
+    width: calc(33.33% - 20px);  /* 3 tiles per row */
+    height: 250px;  /* Reduce tile height for smaller screens */
+  }
+
+  .piechart {
+    margin-left: 0; /* Center pie chart on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust layout for smaller screens (mobiles and small tablets) */
+  .admin-dashboard-main-content {
+    margin-left: 0;
+    padding-top: 20px;
+  }
+
+  .admin-dashboard-tiles-container {
+    padding-top: 30px;
+    gap: 10px;  /* Reduced gap between tiles */
+  }
+
+  .admin-dashboard-tile-item {
+    width: calc(50% - 10px);  /* 2 tiles per row on small screens */
+    height: 200px;  /* Further reduce tile height */
+  }
+
+  .admin-dashboard-tile-description {
+    font-size: 12px;  /* Adjust description text for smaller screens */
+  }
+
+  .admin-dashboard-tile-details {
+    font-size: 12px;  /* Adjust details font size */
+  }
+
+  .piechart {
+    margin-left: 0; /* Ensure pie chart is centered */
+  }
+
+  h1 {
+    font-size: 1.5em;  /* Adjust heading font size */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust layout for very small screens (mobiles) */
+  .admin-dashboard-main-content {
+    margin-left: 0;
+    padding-top: 15px;
+  }
+
+  .admin-dashboard-tiles-container {
+    padding-top: 20px;
+    gap: 5px;  /* Reduced gap for tight spaces */
+  }
+
+  .admin-dashboard-tile-item {
+    width: 100%;  /* Full width for each tile */
+    height: 180px;  /* Adjust height for even smaller screens */
+  }
+
+  h1 {
+    font-size: 1.2em;  /* Smaller heading font size */
+  }
+}

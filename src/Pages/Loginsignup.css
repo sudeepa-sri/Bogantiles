@@ -109,6 +109,29 @@
     }
   }
   
+
+  @media (max-width: 768px) {
+    .auth-container {
+      width: 90%; /* Increase width to 90% for better mobile experience */
+      padding: 20px; /* Reduce padding for smaller screens */
+    }
+  
+    .auth-container input,
+    .auth-container button {
+      width: 100%; /* Make inputs and buttons full-width on mobile */
+      height: 45px; /* Slightly smaller height for inputs and buttons */
+      font-size: 16px; /* Adjust font size for better mobile readability */
+    }
+  
+    .auth-container h2 {
+      font-size: 22px; /* Slightly smaller heading for mobile */
+      margin-bottom: 15px; /* Reduced margin */
+    }
+  
+    .forgot-password {
+      font-size: 13px; /* Smaller text for the forgot password link */
+    }
+  }
  
   
   /* .auth-container input {

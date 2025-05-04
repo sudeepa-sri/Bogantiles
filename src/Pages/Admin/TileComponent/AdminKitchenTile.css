@@ -179,3 +179,57 @@
   color: #aaa;
   font-style: italic;
 }
+
+
+/* Mobile UI Media Queries */
+@media (max-width: 768px) {
+  .admin-view .kitchen-tile-container {
+    margin-left: 0;  /* Remove left margin on small screens */
+    padding: 15px;
+  }
+
+  .admin-view .tile-grid {
+    grid-template-columns: repeat(2, 1fr);  /* Adjust to 2 columns for smaller screens */
+  }
+
+  .admin-view .tile-card {
+    width: 100%;  /* Full width of the container */
+    height: auto;  /* Auto height for better responsiveness */
+    margin-bottom: 20px;
+  }
+
+  .admin-view .tile-image-container {
+    height: 120px;  /* Slightly smaller image height */
+  }
+
+  .admin-view .edit-button,
+  .admin-view .delete-button {
+    width: 100px;  /* Larger button width */
+    padding: 10px 0;
+    font-size: 14px;  /* Smaller font size */
+  }
+
+  .admin-view .filter-container {
+    flex-direction: column;  /* Stack filter options vertically */
+    align-items: flex-start;  /* Align filters to the left */
+  }
+
+  .admin-view select {
+    width: 100%;  /* Full width for the select dropdown */
+    font-size: 14px;  /* Slightly smaller font size */
+  }
+
+  .admin-view .price-filter {
+    flex-direction: column;  /* Stack price inputs vertically */
+    gap: 10px;
+    max-width: 100%;  /* Full width for price filter */
+  }
+
+  .admin-view .price-input {
+    width: 100%;  /* Full width for input fields */
+  }
+
+  .admin-view .search-container input {
+    width: 100%;  /* Full width search input */
+  }
+}

@@ -51,4 +51,25 @@
     background-color: #0056b3;
   }
   
-  
+  /* Mobile-friendly Styles */
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 15px; /* Reduced padding for mobile */
+    max-width: 100%; /* Full width on small screens */
+  }
+
+  h2 {
+    font-size: 20px; /* Smaller font size */
+    margin-bottom: 15px; /* Adjusted margin */
+  }
+
+  input {
+    font-size: 16px; /* Increased font size for easier typing */
+    padding: 12px; /* Increased padding for easier interaction */
+  }
+
+  button {
+    font-size: 14px; /* Reduced button font size for mobile */
+    padding: 12px; /* Increased padding for better touch targets */
+  }
+}

@@ -94,3 +94,30 @@
   border: 1px solid #f5c6cb;
   border-radius: 5px;
 }
+
+
+
+/* Mobile-specific Styles */
+@media (max-width: 768px) {
+  .contactus-card {
+    flex-direction: column; /* Stack the form and map vertically on mobile */
+  }
+
+  .contactus-form {
+    padding-right: 20px; /* Reduce right padding for smaller screens */
+  }
+
+  .contactus-map {
+    height: 250px; /* Fix height of map for mobile */
+    margin-top: 20px; /* Add top margin to map */
+  }
+
+  .form-input input,
+  .form-input textarea {
+    padding: 12px; /* Slightly larger input padding on mobile */
+  }
+
+  .submit-button button {
+    width: 100%; /* Make the submit button full width on mobile */
+  }
+}

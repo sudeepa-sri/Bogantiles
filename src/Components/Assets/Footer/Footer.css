@@ -56,7 +56,7 @@
   
   @media (max-width: 768px) {
     .footer-top {
-      flex-direction: column;
+      flex-direction: column; /* Stack items vertically on mobile */
       text-align: center;
       gap: 15px;
     }
@@ -64,7 +64,27 @@
     .footer-support,
     .footer-address,
     .footer-social {
-      align-items: center;
+      align-items: center; /* Center content in each section */
+      min-width: 100%; /* Allow sections to take full width */
+    }
+  
+    .footer h3 {
+      font-size: 16px; /* Adjust font size for headings on mobile */
+      margin-bottom: 8px;
+    }
+  
+    .footer p,
+    .footer a {
+      font-size: 14px; /* Slightly larger font size for readability */
+    }
+  
+    .footer-social a {
+      font-size: 14px; /* Ensure social links are readable */
+      gap: 8px; /* Increase space between icon and text */
+    }
+  
+    .footer-bottom {
+      font-size: 14px; /* Increase font size for footer bottom text */
     }
   }
   

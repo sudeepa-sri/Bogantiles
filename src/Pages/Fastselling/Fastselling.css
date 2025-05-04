@@ -75,12 +75,28 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .tile-grid-fast {
-    grid-template-columns: 1fr;
+    display: flex;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    gap: 20px;
+    padding: 10px 0;
   }
 
   .tile-card-fast {
-    height: auto; /* Let it expand naturally on small screens */
+    flex: 0 0 auto; /* Prevent cards from stretching */
+    width: 80%; /* Allow cards to be smaller on mobile for better scrolling */
+    height: 300px; /* Adjust height for better fit */
+  }
+}
+
+@media (max-width: 480px) {
+  .tile-grid-fast {
+    gap: 10px; /* Reduce gap on very small screens */
+  }
+
+  .tile-card-fast {
+    width: 70%; /* Further adjust card width for small screens */
+    height: auto; /* Let card height adjust naturally */
   }
 }

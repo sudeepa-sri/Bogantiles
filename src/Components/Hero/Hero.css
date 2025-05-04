@@ -60,3 +60,26 @@
   background: #e65929;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem; /* Smaller heading for mobile */
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .explore-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
