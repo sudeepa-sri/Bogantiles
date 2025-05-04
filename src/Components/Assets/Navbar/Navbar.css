@@ -172,13 +172,9 @@
 
   /* Position login/cart */
   .nav-login-cart {
-    position: absolute;
-    right: 20px;
-    top: 12px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    display: none;
   }
+  
 
   .nav-login-cart button {
     padding: 8px 14px;
@@ -191,6 +187,7 @@
     font-size: 24px;
     position: relative;
   }
+  
 
   .nav-cart-count {
     position: absolute;

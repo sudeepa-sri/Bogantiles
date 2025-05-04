@@ -184,53 +184,60 @@ const Navbar = () => {
         <p>BoganTiles</p>
       </div>
 
+
+
+
+
       {/* Hamburger icon for mobile */}
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         &#9776;
       </div>
 
+
       <ul className={`nav-menu ${menuOpen ? "open" : ""}`}>
-        <li onClick={() => setMenu("home")}>
-          <Link to="/">Home</Link>
-          {menu === "home" && <hr />}
-        </li>
-        <li onClick={() => setMenu("kitchentiles")}>
-          <Link to="/kitchentiles">Kitchen Tiles</Link>
-          {menu === "kitchentiles" && <hr />}
-        </li>
-        <li onClick={() => setMenu("floortiles")}>
-          <Link to="/floortiles">Floor Tiles</Link>
-          {menu === "floortiles" && <hr />}
-        </li>
-        <li onClick={() => setMenu("bathroomtiles")}>
-          <Link to="/bathroomtiles">Bathroom Tiles</Link>
-          {menu === "bathroomtiles" && <hr />}
-        </li>
-        <li onClick={() => setMenu("outdoortiles")}>
-          <Link to="/outdoortiles">Outdoor Tiles</Link>
-          {menu === "outdoortiles" && <hr />}
-        </li>
-      </ul>
+  <li onClick={() => setMenu("home")}>
+    <Link to="/">Home</Link>
+    {menu === "home" && <hr />}
+  </li>
+  <li onClick={() => setMenu("kitchentiles")}>
+    <Link to="/kitchentiles">Kitchen Tiles</Link>
+    {menu === "kitchentiles" && <hr />}
+  </li>
+  <li onClick={() => setMenu("floortiles")}>
+    <Link to="/floortiles">Floor Tiles</Link>
+    {menu === "floortiles" && <hr />}
+  </li>
+  <li onClick={() => setMenu("bathroomtiles")}>
+    <Link to="/bathroomtiles">Bathroom Tiles</Link>
+    {menu === "bathroomtiles" && <hr />}
+  </li>
+  <li onClick={() => setMenu("outdoortiles")}>
+    <Link to="/outdoortiles">Outdoor Tiles</Link>
+    {menu === "outdoortiles" && <hr />}
+  </li>
 
-      <div className="nav-login-cart">
-        {!isLoggedIn ? (
-          <Link to="/login">
-            <button className="login-button">Login</button>
-          </Link>
-        ) : (
-          <button onClick={handleLogout} className="login-button">
-            Logout
-          </button>
-        )}
+  {/* ✅ Move Login & Cart into mobile menu */}
+  <li>
+    {!isLoggedIn ? (
+      <Link to="/login">Login</Link>
+    ) : (
+      <span onClick={handleLogout} style={{ cursor: "pointer" }}>Logout</span>
+    )}
+  </li>
+  <li>
+    <Link to="/cart">
+      Cart 🛒
+      <span className="nav-cart-count" style={{ marginLeft: "8px" }}>
+        {cartCount}
+      </span>
+    </Link>
+  </li>
+</ul>
 
-        <Link to="/cart">
-          <div className="nav-login-cart">
-            <span className="cart-icon">🛒</span>
-            <div className="nav-cart-count">{cartCount}</div>
-          </div>
-        </Link>
+
+     
       </div>
-    </div>
+    
   );
 };
 

@@ -98,7 +98,7 @@
     }
   }
 
-  /* Mobile styles */
+ /* Mobile styles */
 @media (max-width: 768px) {
   /* Adjust search input width for smaller screens */
   .search-input {
@@ -106,10 +106,16 @@
     max-width: 280px;
   }
 
+  /* Adjust the gap between search bar and filter */
+  .search-bar-container {
+    margin: 10px 0; /* Reduced margin */
+    padding: 20px; /* Reduced padding */
+  }
+
   /* Tile container for small screens */
   .tiles-container {
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjust tile width */
-    gap: 16px;
+    gap: 12px; /* Reduced gap between tiles */
   }
 
   /* Adjust tile card size for smaller screens */
@@ -136,7 +142,7 @@
 @media (max-width: 480px) {
   /* Adjust the gap between tiles for smaller screens */
   .tiles-container {
-    gap: 12px;
+    gap: 8px; /* Further reduced gap */
   }
 
   /* Further adjust tile card layout */
