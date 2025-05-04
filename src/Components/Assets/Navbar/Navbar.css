@@ -130,27 +130,32 @@
     color: inherit; /* Ensures it doesn't change the text color */
 }
 
-/* Hamburger icon (hidden on desktop) */
 .hamburger {
   display: none;
-  font-size: 28px;
-  cursor: pointer;
 }
 
-/* Mobile styles */
 @media (max-width: 768px) {
   .navbar {
     display: flex;
-    justify-content: space-between; /* Align logo and cart */
+    justify-content: center;
     align-items: center;
-    padding: 10px 20px; /* Reduced padding */
-    height: auto; /* Adjust height for mobile */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    padding: 10px 20px;
     background-color: white;
+    z-index: 1000;
+  }
+
+  /* Show hamburger */
+  .hamburger {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 18px;
+    font-size: 28px;
+    cursor: pointer;
   }
 
   .nav-logo {
@@ -161,45 +166,59 @@
   }
 
   .nav-logo img {
-    width: 50px; /* Adjust logo size */
+    width: 50px;
     height: auto;
   }
 
-  .hamburger {
-    font-size: 28px;
-    cursor: pointer;
-  }
-
-  .cart-wrapper {
+  /* Position login/cart */
+  .nav-login-cart {
+    position: absolute;
+    right: 20px;
+    top: 12px;
     display: flex;
     align-items: center;
+    gap: 15px;
+  }
+
+  .nav-login-cart button {
+    padding: 8px 14px;
+    font-size: 14px;
+    width: auto;
+    height: auto;
   }
 
   .cart-icon {
     font-size: 24px;
-    margin-right: 5px;
+    position: relative;
   }
 
   .nav-cart-count {
-    width: 20px;
-    height: 20px;
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    font-size: 12px;
-    background-color: red;
-    color: white;
   }
 
+  /* Mobile menu dropdown */
   .nav-menu {
     display: none;
     flex-direction: column;
-    background-color: white;
+    position: absolute;
+    top: 65px; /* Just below navbar */
+    left: 0;
     width: 100%;
-    margin-top: 10px;
-    gap: 15px;
+    background-color: white;
+    z-index: 999;
     padding: 10px 0;
+    border-top: 1px solid #eee;
   }
 
   .nav-menu.open {
@@ -209,7 +228,7 @@
   .nav-menu li {
     text-align: left;
     font-size: 16px;
-    padding: 10px;
+    padding: 10px 20px;
   }
 
   .nav-menu li a {
