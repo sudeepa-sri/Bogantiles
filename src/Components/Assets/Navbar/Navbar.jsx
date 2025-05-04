@@ -212,6 +212,7 @@ const Navbar = () => {
         </li>
       </ul>
 
+      {/* Login/Logout and Cart */}
       <div className="nav-login-cart">
         {!isLoggedIn ? (
           <Link to="/login">
@@ -224,7 +225,7 @@ const Navbar = () => {
         )}
 
         <Link to="/cart">
-          <div className="nav-login-cart">
+          <div className="cart-wrapper">
             <span className="cart-icon">🛒</span>
             <div className="nav-cart-count">{cartCount}</div>
           </div>
