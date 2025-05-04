@@ -137,7 +137,7 @@
 @media (max-width: 768px) {
   .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Adjust to space between logo and hamburger */
     align-items: center;
     position: fixed;
     top: 0;
@@ -152,16 +152,17 @@
   .hamburger {
     display: block;
     position: absolute;
-    left: 20px;
+    right: 20px; /* Align hamburger to the right */
     top: 18px;
     font-size: 28px;
     cursor: pointer;
   }
 
+  /* Logo section */
   .nav-logo {
     flex-grow: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -170,17 +171,16 @@
     height: auto;
   }
 
-  /* Hide the login/cart button in the navbar */
+  /* Hide the nav-login-cart in mobile view, instead show in hamburger menu */
   .nav-login-cart {
     display: none;
   }
 
-  /* Mobile menu dropdown */
   .nav-menu {
-    display: none;
+    display: none; /* Hide by default */
     flex-direction: column;
     position: absolute;
-    top: 65px; /* Just below navbar */
+    top: 65px; /* Below navbar */
     left: 0;
     width: 100%;
     background-color: white;
@@ -190,74 +190,64 @@
   }
 
   .nav-menu.open {
-    display: flex;
+    display: flex; /* Show when hamburger is clicked */
   }
 
+  /* Style for the menu items in mobile view */
   .nav-menu li {
     text-align: left;
-    font-size: 16px;
+    font-size: 18px; /* Adjust font size */
     padding: 10px 20px;
     width: 100%;
+    cursor: pointer;
   }
 
   .nav-menu li a {
     text-decoration: none;
     color: inherit;
-    display: block; /* Makes it full width for easier clicking */
   }
 
-  /* Adjust cart icon for mobile */
+  .nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #ff6600;
+    margin: 5px 0;
+  }
+
+  /* Cart and Login Buttons in mobile menu */
+  .nav-login-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .nav-login-cart button {
+    padding: 8px 14px;
+    font-size: 16px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
   .cart-icon {
-    font-size: 24px;
-    position: relative;
-    margin-left: auto;
+    font-size: 28px; /* Adjust the size of the cart icon */
+    margin-right: 10px;
   }
 
   .nav-cart-count {
-    position: absolute;
-    top: -8px;
-    right: -10px;
-    width: 18px;
-    height: 18px;
-    font-size: 11px;
-    border-radius: 50%;
-    background-color: red;
-    color: white;
+    width: 22px;
+    height: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  /* Style for login button in mobile menu */
-  .nav-login-cart button {
-    padding: 8px 14px;
-    font-size: 14px;
-    width: auto;
-    height: auto;
-    border: none;
-    background-color: #ff6600;
+    margin-top: -35px;
+    margin-left: -50px;
+    border-radius: 11px;
+    font-size: 11px;
+    background-color: red;
     color: white;
-    border-radius: 25px;
-    cursor: pointer;
-  }
-
-  /* Adjust the navigation menu items on mobile */
-  .nav-menu li {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 20px;
-    font-size: 18px;
-    color: black;
-  }
-
-  .nav-menu li a {
-    text-decoration: none;
-    color: black;
-    width: 100%;
-  }
-
-  /* Hamburger close icon */
-  .hamburger {
-    display: block;
   }
 }
