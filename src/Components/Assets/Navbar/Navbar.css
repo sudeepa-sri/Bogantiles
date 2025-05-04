@@ -173,18 +173,37 @@
     width: 100%;
     gap: 10px;
     margin-top: 10px;
+    padding: 10px 0; /* Add padding to separate the cart and login */
+  }
+
+  .nav-login-cart a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   .nav-menu li {
     font-size: 18px;
+    text-align: left;  /* Ensure the text is left-aligned for better mobile readability */
   }
 
   .nav-logo p {
     font-size: 18px;
   }
 
+  /* Adjust the cart icon and count to avoid overlap */
   .nav-cart-count {
-    margin-left: -30px;
-    margin-top: -20px;
+    margin-left: 5px;   /* Slight margin to avoid overlap */
+    font-size: 18px;    /* Increase font size for visibility */
+  }
+
+  /* Fix for shopping cart icon and login button overlap */
+  .nav-login-cart .login-button {
+    width: 100%;   /* Ensure login/logout button takes up the full width */
+    text-align: center; /* Ensure button text is centered */
+  }
+
+  .nav-cart-icon {
+    margin-left: 10px; /* Add space between the cart icon and the button */
   }
 }

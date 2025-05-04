@@ -101,10 +101,12 @@
 @media (max-width: 768px) {
   .contactus-card {
     flex-direction: column; /* Stack the form and map vertically on mobile */
+    padding: 10px; /* Add padding to ensure content doesn't touch the edges */
   }
 
   .contactus-form {
-    padding-right: 20px; /* Reduce right padding for smaller screens */
+    padding-right: 15px; /* Reduce right padding for smaller screens */
+    padding-left: 15px; /* Add left padding to balance */
   }
 
   .contactus-map {
@@ -112,12 +114,29 @@
     margin-top: 20px; /* Add top margin to map */
   }
 
+  .form-fields {
+    width: 100%; /* Ensure form fields use full width */
+  }
+
+  .form-row {
+    width: 100%; /* Ensure the form rows are responsive */
+    margin-bottom: 15px;
+  }
+
   .form-input input,
   .form-input textarea {
+    width: 100%;
     padding: 12px; /* Slightly larger input padding on mobile */
+    margin-top: 5px;
+    box-sizing: border-box; /* Ensures padding is included in the width */
   }
 
   .submit-button button {
     width: 100%; /* Make the submit button full width on mobile */
+  }
+
+  /* Adjust the padding inside the form */
+  .contactus-container {
+    padding: 10px; /* Add some margin/padding for smaller screens */
   }
 }
