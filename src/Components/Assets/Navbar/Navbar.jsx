@@ -235,9 +235,48 @@ const Navbar = () => {
 </ul>
 
 
-     
+      <ul className={`nav-menu ${menuOpen ? "open" : ""}`}>
+        <li onClick={() => setMenu("home")}>
+          <Link to="/">Home</Link>
+          {menu === "home" && <hr />}
+        </li>
+        <li onClick={() => setMenu("kitchentiles")}>
+          <Link to="/kitchentiles">Kitchen Tiles</Link>
+          {menu === "kitchentiles" && <hr />}
+        </li>
+        <li onClick={() => setMenu("floortiles")}>
+          <Link to="/floortiles">Floor Tiles</Link>
+          {menu === "floortiles" && <hr />}
+        </li>
+        <li onClick={() => setMenu("bathroomtiles")}>
+          <Link to="/bathroomtiles">Bathroom Tiles</Link>
+          {menu === "bathroomtiles" && <hr />}
+        </li>
+        <li onClick={() => setMenu("outdoortiles")}>
+          <Link to="/outdoortiles">Outdoor Tiles</Link>
+          {menu === "outdoortiles" && <hr />}
+        </li>
+      </ul>
+
+      <div className="nav-login-cart">
+        {!isLoggedIn ? (
+          <Link to="/login">
+            <button className="login-button">Login</button>
+          </Link>
+        ) : (
+          <button onClick={handleLogout} className="login-button">
+            Logout
+          </button>
+        )}
+
+        <Link to="/cart">
+          <div className="nav-login-cart">
+            <span className="cart-icon">🛒</span>
+            <div className="nav-cart-count">{cartCount}</div>
+          </div>
+        </Link>
       </div>
-    
+    </div>
   );
 };
 
