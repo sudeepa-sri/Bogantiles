@@ -130,57 +130,112 @@
     color: inherit; /* Ensures it doesn't change the text color */
 }
 
-/* Mobile styles */
+/* Mobile Styles */
 @media (max-width: 768px) {
   /* Navbar container */
   .navbar {
-      flex-direction: column;
-      align-items: center;
-      padding: 5px; /* Less padding */
-      justify-content: center;
-      height: auto;  /* Adjust height for mobile */
+    display: flex;
+    justify-content: space-between; /* Space out logo, menu, and cart */
+    background-color: white;
+    padding: 5px; /* Less padding for mobile */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Stay above other elements */
   }
 
   /* Logo Section */
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Reduced gap */
+  }
+
   .nav-logo img {
-      width: 40px; /* Reduce logo size */
-      height: auto;
+    width: 35px; /* Reduced logo size */
+    height: auto;
+  }
+
+  .nav-logo p {
+    font-size: 16px; /* Reduced font size */
+    font-weight: bold;
+    color: black;
+    display: none; /* Hide text for mobile */
   }
 
   /* Navigation Menu */
   .nav-menu {
-      display: flex;
-      flex-direction: column; /* Stack the items vertically */
-      width: 100%;
-      align-items: center;
-      padding-top: 10px;
-      gap: 10px; /* Adjust gap between menu items */
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px; /* Reduced gap between menu items */
+    color: black;
+    font-size: 12px; /* Reduced font size for mobile */
+    font-weight: 500;
   }
 
-  /* Menu item font size and margin adjustment */
   .nav-menu li {
-      font-size: 14px;  /* Smaller font size */
-      margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .nav-menu li:hover {
+    color: #ff6600;
+  }
+
+  .nav-menu li a {
+    text-decoration: none;
+    color: inherit;
   }
 
   /* Login & Cart Section */
   .nav-login-cart {
-      gap: 20px; /* Reduce gap between buttons */
-      font-size: 14px; /* Reduce font size */
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Reduced gap between login/cart */
   }
 
   .nav-login-cart button {
-      width: 130px;
-      height: 45px;
-      font-size: 16px;
+    width: 110px; /* Smaller button width */
+    height: 40px; /* Smaller button height */
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 50px;
+    font-size: 12px; /* Smaller font size */
+    background: white;
+    cursor: pointer;
   }
 
-  /* Hide the word "BoganTiles" for mobile */
-  .nav-logo p {
-      display: none;
+  .nav-login-cart button:active {
+    background: wheat;
   }
 
+  /* Cart Icon */
+  .cart-icon {
+    font-size: 18px; /* Smaller icon size */
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  /* Cart count badge */
   .nav-cart-count {
-      margin-top: -25px; /* Adjust cart count position */
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    margin-left: -45px;
+    border-radius: 9px;
+    font-size: 9px; /* Smaller cart count font */
+    background-color: red;
+    color: white;
   }
 }
