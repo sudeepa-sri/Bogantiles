@@ -154,72 +154,103 @@
 }
 
 
-/* Mobile Styles */
 @media (max-width: 768px) {
-  /* Adjust search input width for smaller screens */
-  .search-input {
-    width: 100%;
-    max-width: 250px; /* Reduced width for search bar */
-  }
-
-  /* Adjust the search bar and filter container to appear next to each other */
+  /* Search bar and filter container side-by-side with reduced size */
   .search-bar-container {
     display: flex;
-    justify-content: space-between; /* Align search bar and filter next to each other */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px 16px;
     margin: 10px 0;
-    padding: 20px;
+    gap: 10px;
   }
 
-  /* Tile container for small screens (two tiles per row) */
+  .search-input {
+    width: 100%;
+    max-width: 180px;
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  /* Tile grid for mobile: 2 columns */
   .tiles-container {
-    grid-template-columns: repeat(2, 1fr); /* Only 2 tiles per row */
-    gap: 0; /* Remove gap between tiles */
-    padding: 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 0 10px;
     max-width: 100%;
   }
 
-  /* Adjust tile card size for smaller screens */
+  /* Tile card styles for compact view */
   .tile-card {
-    width: 100%; /* Full width for tiles to fit */
+    width: 100%;
     height: auto;
-    padding: 10px; /* Some padding for tiles */
+    padding: 6px;
+    border-radius: 12px;
   }
 
-  /* Adjust font sizes */
+  .tile-image {
+    height: 130px;
+  }
+
   .tile-name {
-    font-size: 1rem; /* Smaller tile name */
+    font-size: 0.9rem;
+    margin: 10px 0 4px;
   }
 
   .tile-card p {
-    font-size: 0.8rem; /* Smaller text for price/size */
+    font-size: 0.7rem;
+    margin: 2px 0;
   }
 
   .view-details-button {
-    font-size: 12px; /* Adjust button size */
+    margin-top: 6px;
+    padding: 6px 12px;
+    font-size: 11px;
+    border-radius: 6px;
   }
 }
 
 @media (max-width: 480px) {
-  /* Further adjustments for very small screens */
+  .search-bar-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px 12px;
+  }
+
+  .search-input {
+    max-width: 150px;
+    font-size: 13px;
+    padding: 5px;
+  }
+
   .tiles-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 tiles per row */
-    gap: 0; /* No gap */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    padding: 0 8px;
   }
 
   .tile-card {
-    padding: 8px; /* Smaller padding */
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .tile-image {
+    height: 110px;
   }
 
   .tile-name {
-    font-size: 0.9rem; /* Slightly smaller name */
+    font-size: 0.8rem;
+    margin: 8px 0 4px;
   }
 
   .tile-card p {
-    font-size: 0.7rem; /* Further adjust price/size font */
+    font-size: 0.65rem;
   }
 
   .view-details-button {
-    padding: 8px 16px;
-    font-size: 11px; /* Smaller button font size */
+    padding: 5px 10px;
+    font-size: 10px;
   }
 }
