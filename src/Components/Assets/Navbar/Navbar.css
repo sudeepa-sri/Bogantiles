@@ -1,5 +1,5 @@
 /* Navbar container */
-/* .navbar {
+.navbar {
     display: flex;
     justify-content: space-around; 
     background-color: white; 
@@ -127,38 +127,4 @@
 .nav-menu li a {
     text-decoration: none; 
     color: inherit; 
-} */
-
-
-/* Navbar container */
-.navbar {
-  z-index: 1000;
-}
-
-/* Logo Section (Left) */
-.nav-logo img {
-  width: 50px; /* Adjust logo size */
-  height: auto;
-  margin-right: 10px;
-}
-
-/* Cart icon */
-.cart-icon {
-  font-size: 24px;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-.nav-cart-count {
-  width: 22px;
-  height: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -35px;
-  margin-left: -55px;
-  border-radius: 11px;
-  font-size: 11px;
-  background-color: red;
-  color: white;
 }
