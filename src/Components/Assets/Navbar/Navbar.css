@@ -95,7 +95,7 @@
 .cart-icon {
     font-size: 24px;  /* Adjust the size of the icon */
     cursor: pointer;  /* Makes it clickable */
-    margin-right: 30px;
+    margin-right: 10px;
   }
   
   .nav-login-cart span {
@@ -129,32 +129,17 @@
     text-decoration: none; /* Removes underline */
     color: inherit; /* Ensures it doesn't change the text color */
 }
-/* Hamburger icon - hidden by default */
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
 
-/* Container for cart icon */
-.cart-icon-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-/* ✅ Responsive styles for mobile */
-
+/* Mobile Styles */
 @media (max-width: 768px) {
+  /* Navbar container */
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding: 6px 12px;
-    height: 48px;
+    padding: 2px 8px; /* Minimal padding */
+    height: 32px; /* Approx 2rem height */
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
@@ -163,66 +148,41 @@
     z-index: 1000;
   }
 
+  /* Logo Section */
   .nav-logo {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 4px; /* Tight gap */
   }
 
   .nav-logo img {
-    width: 28px;
+    width: 22px; /* Smaller logo */
     height: auto;
   }
 
   .nav-logo p {
-    display: none;
+    display: none; /* Hide text on mobile */
   }
 
-  .menu-toggle {
-    display: block;
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
+  /* Navigation Menu */
   .nav-menu {
-    display: none;
-    flex-direction: column;
-    gap: 12px;
-    position: absolute;
-    top: 48px;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    padding: 10px 16px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
-    z-index: 999;
+    display: none; /* Optional: hide menu for tight height */
   }
 
-  .nav-menu.show {
-    display: flex;
-  }
-
-  .nav-menu li {
-    font-size: 16px;
-    padding: 6px 0;
-    align-items: flex-start;
-  }
-
+  /* Login & Cart Section */
   .nav-login-cart {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
   }
 
   .nav-login-cart button {
-    width: 65px;
-    height: 26px;
-    font-size: 10px;
+    width: 60px;
+    height: 24px;
+    border: 1px solid gray;
     border-radius: 20px;
+    font-size: 10px;
     padding: 0;
-    border: 1px solid grey;
     background: white;
     cursor: pointer;
   }
@@ -231,22 +191,18 @@
     background: wheat;
   }
 
+  /* Cart Icon */
   .cart-icon {
-    font-size: 16px;
+    font-size: 14px;
     margin-right: 0;
   }
 
+  /* Cart count badge */
   .nav-cart-count {
     width: 14px;
     height: 14px;
     font-size: 8px;
-    margin-top: -16px;
-    margin-left: -20px;
-    border-radius: 7px;
-    background-color: red;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: -20px;
+    margin-left: -30px;
   }
 }
